@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import HeadingDesc from './HeadingDesc'
 import Lookup from '@/app/_data/Lookup'
 
 const LogoDesc = ({onHandInputChange,formData}) => {
+
+   const [desc,setDesc] = useState(formData?.desc) 
   return (
     <div className='my-10'>
 
@@ -12,7 +14,7 @@ const LogoDesc = ({onHandInputChange,formData}) => {
         />
       <input type='text' placeholder={Lookup.InputTitlePlaceholder}
          className='p-4 border rounded-lg mt-5 w-full'
-        value={formData?.desc}
+        value={desc}
          onChange={(e)=>{
             onHandInputChange(e.target.value)
          }}

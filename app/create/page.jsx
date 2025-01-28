@@ -21,7 +21,7 @@ const [formData,setFormData] = useState()
     [field]:value
    }))
 
-   console.log(formData)
+ 
 
  }
 
