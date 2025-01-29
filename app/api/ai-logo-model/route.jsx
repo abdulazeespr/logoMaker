@@ -1,4 +1,5 @@
 import { AILogoPrompt } from "@/app/config/Aimodel";
+import { db } from "@/app/config/FirebaseConfig";
 import axios from "axios";
 import { doc, setDoc } from "firebase/firestore";
 import { NextResponse } from "next/server";
@@ -45,6 +46,8 @@ export async function POST(req) {
             desc:desc,
           })
       }catch(e){
+
+        console.log(e)
 
       }
 
