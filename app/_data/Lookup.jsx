@@ -8,7 +8,7 @@ export default {
     LogoDescTitle :"Describe Your Logo Vision",
     LogoDescDesc : "Share Your ideas,themes,or inspiration to create a logo that perfectly represents your brand or project",
     LogoIdeaTitle : "Select Your Design Idea",
-    LogoIdeaDesc : "Choose a design Style that aligns your Business",
+    LogoIdeaDesc : "Choose a design style that aligns with your vision ,or skip to receive a random suggestion",
     LogoDesignTitle : "Choose Your Logo Style",
     LogoDesignDesc : "Select the type of logo design style",
     LogoColorPaletteTitle : "Choose Your Color Palette",
