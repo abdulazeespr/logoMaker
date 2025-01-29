@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { Suspense, useState } from 'react'
 import LogoTitle from './_components/LogoTitle'
 import { Button } from '@/components/ui/button'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
@@ -26,6 +26,7 @@ const [formData,setFormData] = useState()
  }
 
   return (
+    <Suspense>
     <div className='mt-28 p-8 border rounded-xl 2xl:mx-72'>
      {step === 1 ? <LogoTitle
       onHandInputChange={(v)=> onHandInputChange('title',v)}
@@ -61,6 +62,7 @@ const [formData,setFormData] = useState()
       </div>
 
     </div>
+    </Suspense>
   )
 }
 
