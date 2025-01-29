@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { Suspense, useState } from 'react'
 import HeadingDesc from './HeadingDesc'
 import Lookup from '@/app/_data/Lookup'
 import { useSearchParams } from 'next/navigation'
@@ -15,6 +15,7 @@ const LogoTitle = ({onHandInputChange,formData}) => {
 
   return (
     <div>
+      <Suspense>
         <HeadingDesc
         title={Lookup.LogoTitle}
         description={Lookup.LogoTitleDesc}
@@ -26,6 +27,7 @@ const LogoTitle = ({onHandInputChange,formData}) => {
             onHandInputChange(e.target.value)
          }}
         />
+        </Suspense>
 
     </div>
   )
