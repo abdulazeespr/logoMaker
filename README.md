@@ -1,6 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Ai LogoMaker
+
+Our AI-powered Logo Generator is a web application designed to create unique and high-quality logos effortlessly. By leveraging the power of Google's Gemini for intelligent prompt generation and Hugging Face's text-to-image model, the application transforms user inputs into visually appealing logo designs.
+
+## Demo
+
+[![Watch the video](https://img.youtube.com/vi/2RO44Ard53A/maxresdefault.jpg)](https://youtu.be/2RO44Ard53A)
+
+### [Watch this video on YouTube](https://youtu.be/2RO44Ard53A)
+
+## Key Features:
+
+* Developed AI LogoMaker using Next.js for full-stack development, integrating Firebase for logo storage
+and user data management.
+* Implemented Gemini to generate logo prompts and ideas, enhancing the creative process for users.
+* Utilized an open-source HuggingFace text-to-image model to generate custom logos from AI-driven
+prompts, improving design automation.
+* Designed a user dashboard to view and manage generated logos, providing easy access to previous designs
+stored in Firebase.
+
 
 ## Getting Started
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
