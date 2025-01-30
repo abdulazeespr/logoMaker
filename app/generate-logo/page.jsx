@@ -5,6 +5,7 @@ import Prompt from '../_data/Prompt'
 import axios from 'axios'
 import Image from 'next/image'
 
+
 const GenerateLogo = () => {
 
   const {userDetail,setUserDetail} = useContext(UserDetailContex)
@@ -61,8 +62,13 @@ useEffect(()=>{
 
   return (
     <div>
-      <h2>{loading&& 'Loading ....' }</h2>
-      {!loading && <Image src={logoImage} alt='logo' width={200} height={200}/>}
+      <h2>{loading&& <Image className='mt-10' src={'loading.svg'} width={400} height={300}/> }</h2>
+      {!loading && 
+      <div className='mt-10 p-5'>
+        <h2 className='font-bold text-2xl'>Generate image :</h2>
+      <Image src={logoImage} alt='logo' width={200} height={200}/>
+       </div>
+      }
     </div>
   )
 }
