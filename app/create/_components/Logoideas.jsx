@@ -42,7 +42,7 @@ const [select,setSelect] = useState()
     {loading && <Loader2Icon className='animate-spin my-10'/>}
     </div>
      <div className='flex flex-wrap gap-3 mt-6'>
-         {ideas.map((idea,index)=>(
+         {ideas?.map((idea,index)=>(
           <div key={index}
           onClick={()=>{setSelect(idea)
             onHandInputChange(idea)
